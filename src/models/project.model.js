@@ -1,8 +1,9 @@
+import mongoose, { Schema } from "mongoose";
+
 const projectSchema = new Schema(
   {
     projectName: {
       type: String,
-      required: true,
     },
     user: {
       type: Schema.Types.ObjectId,
